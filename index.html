@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+Khudawadi&family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=WDXL+Lubrifont+TC&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>website umkm</title>
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <img src="/logokue.jpg" alt="" />
+      </div>
+
+      <div class="navbar">
+        <ul class="nav-links">
+          <li><a href="#">beranda</a></li>
+          <li><a href="#prodaklainnya">prodaklainya</a></li>
+          <li><a href="#menu">menu</a></li>
+          <li><a href="#kontak">contack</a></li>
+        </ul>
+      </div>
+
+      <div class="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+    <!-- bagian slide -->
+    <div class="slide">
+      <div class="card">
+        <div
+          id="carouselExampleIndicators"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="/1.jpg" class="d-block w-100" alt="..." />
+            </div>
+            <div class="carousel-item">
+              <img src="/2.jpg" class="d-block w-100" alt="..." />
+            </div>
+            <div class="carousel-item">
+              <img src="/3.jpg" class="d-block w-100" alt="..." />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- bagian sejarah maknan-->
+    <div class="sejarh-teks" id="prodaklainnya">
+      <h3 class="teks-makanan">Prodack lainnya</h3>
+      <div class="menu-sejarah">
+        <div class="menu-list"></div>
+        <div class="menu-gambar">
+          <img src="/gb1.jpg" alt="" />
+          <img src="/nasi kotak.jpg" alt="" />
+          <img src="/IMG-20250603-WA0008.jpg" alt="" />
+          <img src="/IMG-20250603-WA0007.jpg" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <!-- bagian gambar grid -->
+    <div class="grid-contak">
+      <div class="teks-container">
+        <h2>
+          menyajikan masakan rumahan dengan <br />
+          cita rasa autentik dan bahan-bahan <br> pilihan berkualitas tinggi Kami
+          menggunakan rempah-rempah segar</br> dan teknik memasak
+          tradisional yang diwariskan turun-temurun.
+        </h2>
+        <p> Setiap hidangan dibuat dengan penuh cinta dan <br> perhatian terhadap detail untuk kepuasan pelanggan.</p>
+      </div>
+      <div class="grid-container">
+        <div class="vertical">
+          <div class="images">
+            <img src="/kue3.jpg" alt="" />
+          </div>
+        </div>
+        <div class="horizontal-top">
+          <div class="horixontal-img">
+            <img src="/horixontal.jpg" alt="">
+          </div>
+          </div>
+        <div class="horizontal-bottom">
+          <div class="horizontal-2">
+            <img src="/gb3.jpg" alt="">
+          </div>
+         </div>
+      </div>
+    </div>
+    <!-- bagian gambar grid -->
+
+    <!-- bagian prodack -->
+    <div class="bacround" id="menu">
+      <h2>menu</h2>
+      <div class="menu-containers" id="produck">
+        <div class="menu-container">
+          <!-- Card 1 -->
+          <div
+            data-aos="fade-right"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine"
+            class="food-card"
+          >
+            <img src="/tuna garo rica.jpg" alt="Pizza" class="food-image" />
+            <div class="food-content">
+              <h3 class="food-title">tuna garo rica</h3>
+              <p class="food-price">Rp 35.000</p>
+              <a
+                href="https://wa.me/+6282188568118?text=Halo%20saya%20mau%20beli%20produk%20Anda"
+                class="order-btn"
+                >Pesan Sekarang</a
+              >
+            </div>
+          </div>
+          <!-- card 2 -->
+          <div
+            data-aos="fade-right"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine"
+            class="food-card"
+          >
+            <img src="/kue2.jpg" alt="Pizza" class="food-image" />
+            <div class="food-content">
+              <h3 class="food-title">aneka kue kering</h3>
+              <p class="food-price">Rp100.000</p>
+              <a
+                href="https://wa.me/+6282188568118?text=Halo%20saya%20mau%20beli%20produk%20Anda"
+                class="order-btn"
+                >Pesan Sekarang</a
+              >
+            </div>
+          </div>
+
+          <!-- Card 3-->
+          <div
+            data-aos="fade-right"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine"
+            class="food-card"
+          >
+            <img src="/sambal udang ebi.jpg" alt="Burger" class="food-image" />
+            <div class="food-content">
+              <h3 class="food-title">Sambal udang ebi</h3>
+
+              <p class="food-price">Rp 30.000</p>
+              <a
+                href="https://wa.me/+6282188568118?text=Halo%20saya%20mau%20beli%20produk%20Anda"
+                class="order-btn"
+                >Pesan Sekarang</a
+              >
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div
+            data-aos="fade-right"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine"
+            class="food-card"
+          >
+            <img src="/kue4.jpg" alt="Sushi" class="food-image" />
+            <div class="food-content">
+              <h3 class="food-title">cake zebra</h3>
+              <p class="food-price">Rp 120.000.00</p>
+              <a
+                href="https://wa.me/+6282188568118?text=Halo%20saya%20mau%20beli%20produk%20Anda"
+                class="order-btn"
+                >Pesan Sekarang</a
+              >
+            </div>
+          </div>
+
+          <!-- Card 5 -->
+          <div
+            data-aos="fade-left"
+            data-aos-anchor="#example-anchor"
+            data-aos-offset="500"
+            data-aos-duration="500"
+            class="food-card"
+          >
+            <img src="/kue5.jpg" alt="Steak" class="food-image" />
+            <div class="food-content">
+              <h3 class="food-title">makron Kenari</h3>
+              <p class="food-price">Rp 50.000</p>
+              <a
+                href="https://wa.me/+6282188568118?text=Halo%20saya%20mau%20beli%20produk%20Anda"
+                class="order-btn"
+                >Pesan Sekarang</a
+              >
+            </div>
+          </div>
+          <!-- card 6  -->
+          <div
+            data-aos="fade-left"
+            data-aos-anchor="#example-anchor"
+            data-aos-offset="500"
+            data-aos-duration="500"
+            class="food-card"
+          >
+            <img src="/kue6.jpg" alt="Steak" class="food-image" />
+            <div class="food-content">
+              <h3 class="food-title">Klapetart Kenari</h3>
+              <p class="food-price">Rp.50.000</p>
+              <a
+                href="https://wa.me/+6282188568118?text=Halo%20saya%20mau%20beli%20produk%20Anda"
+                class="order-btn"
+                >Pesan Sekarang</a
+              >
+            </div>
+          </div>
+          <!-- card 7 -->
+          <div
+            data-aos="fade-left"
+            data-aos-anchor="#example-anchor"
+            data-aos-offset="500"
+            data-aos-duration="500"
+            class="food-card"
+          >
+            <img
+              src="/dimsum ikan dan ayam.jpg"
+              alt="Steak"
+              class="food-image"
+            />
+            <div class="food-content">
+              <h3 class="food-title">Dimsum ikan & ayam</h3>
+              <p class="food-price">Rp 25.000</p>
+              <a
+                href="https://wa.me/+6282188568118?text=Halo%20saya%20mau%20beli%20produk%20Anda"
+                class="order-btn"
+                >Pesan Sekarang</a
+              >
+            </div>
+          </div>
+          <!-- card 8 -->
+          <div class="food-card">
+            <img src="/abon gampati tuna.jpg" alt="Steak" class="food-image" />
+            <div class="food-content">
+              <h3 class="food-title">abon garampati tuna</h3>
+              <p class="food-price">Rp 35.000</p>
+              <a
+                href="https://wa.me/+6282188568118?text=Halo%20saya%20mau%20beli%20produk%20Anda"
+                class="order-btn"
+                >Pesan Sekarang</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer id="kontak">
+      <h4 class="teks-media">informasi prodak</h4>
+      <div class="media">
+        <a href="https://www.instagram.com/dapurkaktammy/"
+          ><i class="fa-brands fa-square-instagram"></i>instagram</a
+        >
+        <a
+          href="https://wa.me/+6282188568118?text=Halo%20saya%20mau%20beli%20produk%20Anda
+"
+          ><i onclick="sendToWhatsapp()" class="fa-brands fa-whatsapp"></i
+          >whatsap</a
+        >
+        <a href="https://www.facebook.com/dapur.roa.1"
+          ><i class="fa-brands fa-facebook"></i>facebook</a
+        >
+      </div>
+      <div class="contak-alamat">
+        <p>Alamat : Umkm dapur tammy</p>
+      </div>
+      <div class="maps">
+        <a
+          href="https://www.google.com/maps/place/Mess+Taiwi+Barito/@0.7818998,127.382556,103m/data=!3m1!1e3!4m9!1m2!2m1!1s+kantor+malut+pos+naik+kadara,+jln.%C2%A0Ms.%C2%A0Djahir!3m5!1s0x329cb1002be025d9:0x89bd1bba2ef3b66c!8m2!3d0.7818937!4d127.3829517!16s%2Fg%2F11y7y933wy!5m1!1e4?entry=ttu&g_ep=EgoyMDI1MDcxNi4wIKXMDSoASAFQAw%3D%3D"
+          target="_blank"
+        >
+          📍 Lihat di Google Maps
+        </a>
+      </div>
+    </footer>
+    <!-- sscript bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="sendToWhatsapp"></script>
+  </body>
+</html>
